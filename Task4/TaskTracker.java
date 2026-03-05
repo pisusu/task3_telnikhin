@@ -1,12 +1,4 @@
-// Элемент списка
-class TaskItem {
-    String description;
-    TaskItem next;
-
-    TaskItem(String desc) {
-        this.description = desc;
-    }
-}
+package Task4;
 
 // Класс трекера
 class TaskTracker {
@@ -54,22 +46,5 @@ class TaskTracker {
         } else {
             first = first.next;
         }
-    }
-}
-
-public class Task4 {
-    public static void main(String[] args) {
-        TaskTracker tracker = new TaskTracker();
-
-        tracker.addTask("Купить хлеб");
-        tracker.addTask("Сделать уроки");
-        tracker.addTask("Почистить обувь");
-        tracker.addTask("Позвонить другу");
-        tracker.addTask("Выгулять собаку");
-
-        tracker.showTasks(3);
-
-        tracker.completeTask("Сделать уроки");
-        tracker.showTasks(3);
     }
 }
